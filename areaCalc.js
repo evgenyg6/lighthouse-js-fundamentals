@@ -1,34 +1,40 @@
 function calculateRectangleArea(length, width){
+
   var area;
-  if(length <= 0, width <= 0){
-    return area;
-  }
-  else {
+  if(length > 0, width > 0){
     area = length * width;
     return area;
   }
+    else {
+      return area;
+    }
+
 }
+
 function calculateTriangleArea(base, height){
   var area;
-  if(base <= 0, height <= 0){
-    return area;
-  }
-  else {
+  if (base > 0, height > 0){
     area = base * height / 2;
     return area;
   }
-}
-function calculateCircleArea(radius){
-  var area;
-  if(radius <= 0){
-    return area;
-  }
-  else {
-    area = Math.PI * radius * radius;
-    return area;
-  }
+    else{
+      return area;
+    }
+
 }
 
+function calculateCircleArea(radius){
+
+  var area;
+  if(radius > 0){
+    area = Math.PI * radius * radius;
+    return area;
+    }
+   else{
+    return area;
+  }
+
+}
 
 console.log(calculateRectangleArea(10, 5));     // should print 50
 console.log(calculateRectangleArea(1.5, 2.5));  // should print 3.75
